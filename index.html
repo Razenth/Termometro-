@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="es-CO">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Título de la página</title>
+    <link rel="stylesheet" href="./style.css">
+    <script defer src="./main.js"></script>
+</head>
+<body>
+    <main>
+        <div class="contenedor">
+            <h2 class="contenedor__titulo">
+                "TERMOMETRO DIGITAL"
+            </h2>
+            <div class="parte1">
+            <input type="text" class="temperatura" id="valor">
+            <div class="opciones">
+                <p>
+                    <input type="radio" name="temp" id="C" class="temp">
+                    <label for="">°F a °C</label>
+
+                </p>
+
+                <p>
+                    <input type="radio" name="temp" id="F" class="temp">
+                    <label for="">°C a °F</label>
+                </p>
+            </div>
+            </div>
+            <div class="parte2">
+            <div class="resultado">0°</div>
+            <div class="boton" id="boton">CONVERTIR</div>
+            </div>
+            <div class="parte3">
+            <div class="termometro">
+                <div class="termometro__mercurio" id="mercurio"></div>
+            </div>
+            </div>
+        </div>
+    </main>
+</body>
+</html>
