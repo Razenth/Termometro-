@@ -4,8 +4,8 @@ const cel=document.getElementById('C')
 const fare=document.getElementById('F')
 const temp=document.getElementsByClassName('temp')
 const resultado=document.getElementsByClassName('resultado')
-const mercurio=document.getElementById('mercurio')
-
+const mercurio=document.querySelector('#mercurio')
+let relleno=0
 
 
 boton.addEventListener('click',()=>{
@@ -32,9 +32,9 @@ boton.addEventListener('click',()=>{
     }else{
         alert('No se selecciono')
     }
-
-    if(relleno>100){
-        mercurio.style.heigth= '50%'
+    
+    if(relleno>=100){
+        mercurio.style.heigth= '100%'
     }
     
     else if (relleno<0){

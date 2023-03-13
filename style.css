@@ -11,12 +11,16 @@
 html, body{
     width: 100vw;
     height: 100vh;
+    background: rgb(131,58,180);
+    background: linear-gradient(90deg, rgba(131,58,180,1) 0%, rgba(253,29,29,1) 100%, rgba(252,176,69,1) 100%);
 }
 body{
     padding:10px
 }
 main{
-border: solid 1px;
+/* border: solid 1px green; */
+border-radius: 5px;
+background-color: beige;
 width: 100%;
 height: 100%;
 }
@@ -47,12 +51,22 @@ height: 100%;
     align-items: center;
     gap: 10px;
     grid-area: partes1;
-    border: 1px solid;
+    justify-content: center;
+}
+
+.parte1 input{
+    background-color: rgba(131,58,180,1);
+    color: white;
+    border: 5px white solid;
+    font-size: 5px;
+    border-style:double;
+    border-radius: 10px;
 }
 .parte2{
     display: grid;
     grid-area: partes2;
     justify-items: center;
+    
 }
 .parte3{
     grid-area: partes3;
@@ -61,7 +75,10 @@ height: 100%;
     align-items: center;
 }
 .resultado{
-    width: 50px;
+    border-radius: 3px;
+    background-color:rgb(177, 88, 249) ;
+    color: white;
+    width: 100px;
     height: 50px;
     border: solid 1px;
     display: flex;
@@ -75,22 +92,30 @@ height: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
-    border: solid 1px black;
+    background-color: black;
+    color: white;
     border-radius: 10px;
-    cursor: alias;
+    cursor:pointer;
+}
+
+.boton:hover{
+    color: white;
+    background-color:rgb(177, 88, 249);
 }
 
 .termometro{
-    height: 100px;
+    height: 300px;
+    border-bottom-right-radius: 5px;
+    border-bottom-left-radius: 5px;
     width: 30px;
-    border: solid 1px black;
+    border: solid 2px black;
     transform: rotate(180deg);
 }
 
-.termometro__mercurio{
-    height: 100%;
+#mercurio{
+    /* height: 1%; */
     width: 100%;
-    background-color: red;
+    background-color: rgba(255, 0, 0, 0.849);
 }
 
 .opciones{
@@ -106,17 +131,15 @@ input[type="text"]{
 }
 
 @media(max-width:425px){
-    main{
-        background-color: aqua;
+    .contenedor__titulo{
+        text-align: center;
     }
 
     .parte3{
-        border: 1px solid;
         align-items: flex-start;
     }
 
     .termometro{
-        
         height: 300px;
         width: 50px;
     }
