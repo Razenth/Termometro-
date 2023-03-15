@@ -7,16 +7,13 @@ const resultado=document.getElementsByClassName('resultado')
 const mercurio=document.querySelector('#mercurio')
 let relleno=0
 
-
 boton.addEventListener('click',()=>{
     if (isNaN(valor.value || valor.value==''
     || visualViewport.value==undefined)){
         alert('No es un numero')
 
     }
-
-    else{
-        
+    else{   
     let celsius=(valor.value- 32) * 5/9
     let faren=(valor.value * 9/5) + 32
 
