@@ -34,14 +34,14 @@ boton.addEventListener('click',()=>{
     }
     
     if(relleno>=100){
-        mercurio.style.heigth= '100%'
+        mercurio.style.height= '100%'
     }
     
     else if (relleno<0){
-        mercurio.style.heigth='0%'
+        mercurio.style.height='0%'
     }
     else{
-        mercurio.style.heigth=`${relleno}%`
+        mercurio.style.height=`${relleno}%`
     }
 }
 })
